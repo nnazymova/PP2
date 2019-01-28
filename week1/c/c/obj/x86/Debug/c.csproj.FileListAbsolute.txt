@@ -1,0 +1,6 @@
+/Users/naz/Desktop/pp2/week1/c/c/bin/Debug/c.exe
+/Users/naz/Desktop/pp2/week1/c/c/bin/Debug/c.pdb
+/Users/naz/Desktop/pp2/week1/c/c/obj/x86/Debug/c.csprojAssemblyReference.cache
+/Users/naz/Desktop/pp2/week1/c/c/obj/x86/Debug/c.csproj.CoreCompileInputs.cache
+/Users/naz/Desktop/pp2/week1/c/c/obj/x86/Debug/c.exe
+/Users/naz/Desktop/pp2/week1/c/c/obj/x86/Debug/c.pdb
