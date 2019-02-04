@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace d
+namespace Task4
 {
     class MainClass
     {
