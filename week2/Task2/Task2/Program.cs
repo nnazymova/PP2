@@ -1,13 +1,17 @@
 ﻿using System;
+using System.IO;
 
 namespace Task2
 {
     class MainClass
     {
+
         public static void Main(string[] args)
         {
-                string t = System.IO.File.ReadAllText(@"C:\Users\Desktop\fortask2\text.txt");
-                string [] txt = t.Split();
+            DirectoryInfo d = new DirectoryInfo("/Users/naz/desktop/pp2/week2/Task2");
+            StreamReader sr = new StreamReader("input.txt");
+            String s = sr.ReadToEnd();
+            string [] txt = s.Split();
 
                 for (int i = 0; i < txt.Length; i++)
                 {
@@ -22,8 +26,9 @@ namespace Task2
 
                     if (j == c)
                     {
-                        System.IO.File.WriteAllText(@"C:\Users\Desktop\fortask2\output.txt", txt[i]);
-                    }
+                    StreamWriter sw = new StreamWriter("output.txt");
+                    sw.WriteLine(c);
+                }
                 }
             }
     }
