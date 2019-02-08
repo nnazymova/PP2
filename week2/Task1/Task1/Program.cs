@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace Task1
 {
@@ -28,24 +29,34 @@ namespace Task1
 
         public static void Main(string[] args)
         {
-            //считываем с кансоли слово
-            string s = Console.ReadLine();
+            //создаем DirectoryInfo для того чтобы указать путь к нашему файлу
+            DirectoryInfo d = new DirectoryInfo(@"/Users/naz/desktop/fortask1");
 
-            //присваиваем новой переменной функцию и передаем туда считанное слово
+            //указываем на файл, с которого необходимо считать даннные
+            StreamReader sr = new StreamReader("t.txt");
+
+            //создаем пременную, значением которой будут считанные данные из файла
+            String s = sr.ReadLine();
+
+            //пишем считанные данные в кансоль
+            Console.WriteLine(s);
+
+            //создаем переменную bool и присваеваем ей результат функции P 
             bool a = P(s);
 
             //если условие выполнено, выводим "YES"
-            if(a == true)
+            if (a == true)
             {
                 Console.WriteLine("Yes");
             }
+
             //в противном случае выводим "NO"
             else
             {
                 Console.WriteLine("NO");
-
             }
 
+            }
+        }       
         }
-    }
-}
+
