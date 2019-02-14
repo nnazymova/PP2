@@ -4,6 +4,16 @@ namespace Task3
 {
     class MainClass
     {
+        //создаем функцию которая будет выводить элемент два раза
+        static void Double(string a)
+        {
+            for (int j = 0; j < 2; j++)
+            {
+                //вывод в кансоль элемент и пробел
+                Console.Write(a + " ");
+            }
+        }
+
         public static void Main(string[] args)
         {
             //объявляем первую переменную
@@ -24,12 +34,8 @@ namespace Task3
             //создаем цикл для массива с длинною б
             for (int i = 0; i < b; i++)
             {
-                //создаем цикл для  повторение 2 раза
-                for (int j = 0; j < 2; j++)
-                {
-                    //вывод в кансоль элемент и пробел
-                    Console.Write(arr[i] + " ");
-                }
+                //вызываем функцию
+                Double(arr[i]);
             }
         }
     }

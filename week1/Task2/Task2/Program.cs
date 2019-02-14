@@ -43,7 +43,7 @@ namespace Task2
         {
 
             //считваем с кансоли данные
-            Student Info = new Student(Console.ReadLine(), Console.ReadLine());
+            Student Info = new Student("Nazerke", "18BD111074");
 
             //создаем цикл, который будет повторяться 4 раза(4 года обучения)
             for (int i = 0; i < 4; i++)
